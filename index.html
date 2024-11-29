@@ -1,11 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="whith=device-with, initial-scale=1.0">
-  <title>Gestor de Archivos</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Archivos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #6200ea;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        main {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1rem;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        button {
+            background-color: #6200ea;
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #3700b3;
+        }
+    </style>
 </head>
 <body>
-  <h1>Bien Venido a mi Gestor de Archivos</h1>
+    <header>
+        <h1>Gestor de Archivos</h1>
+    </header>
+    <main>
+        <h2>Sube y gestiona tus archivos fácilmente</h2>
+        <form>
+            <label for="fileUpload">Selecciona un archivo para subir:</label>
+            <br><br>
+            <input type="file" id="fileUpload" name="fileUpload">
+            <br><br>
+            <button type="submit">Subir Archivo</button>
+        </form>
+        <br>
+        <h3>Archivos disponibles:</h3>
+        <ul>
+            <!-- Aquí aparecerán los archivos subidos -->
+            <li>No hay archivos subidos aún.</li>
+        </ul>
+    </main>
 </body>
 </html>
